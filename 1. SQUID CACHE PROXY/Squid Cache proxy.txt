@@ -1,0 +1,42 @@
+#Squid Cache proxy
+
+sudo apt update
+sudo apt upgrade
+
+sudo apt install squid
+
+#Konfigurasi Squid:
+
+#Konfigurasi Squid terletak di file /etc/squid/squid.conf. Anda dapat mengedit file ini sesuai dengan kebutuhan Anda. Berikut adalah beberapa konfigurasi yang umum digunakan:
+
+1. Atur Port Squid:
+http_port 3128
+
+2. Konfigurasi Cache:
+cache_dir ufs /var/spool/squid 100 16 256
+
+3. Konfigurasi ACL (Access Control List):
+acl localnet src 192.168.1.0/24
+http_access allow localnet
+
+4.  Konfigurasi Cache Access:
+cache allow all
+
+5. Konfigurasi Cache Manager:
+cache_mgr <email_admin>
+cachemgr_passwd <password> all
+cache_mem 256 MB
+
+#Restart Squid:
+sudo systemctl restart squid
+
+#Verifikasi Instalasi:
+sudo systemctl status squid
+
+#Anda juga dapat memeriksa log untuk melihat apakah ada pesan kesalahan atau peringatan:
+sudo tail -f /var/log/squid/access.log
+
+
+#konfigurasi squid agar listen pada port nginx proxy manager
+http_port 80
+https_port 443 # error running service
