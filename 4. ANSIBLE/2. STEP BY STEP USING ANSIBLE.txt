@@ -1,0 +1,23 @@
+## STEP BY STEP USING ANSIBLE
+
+# TODO Install Ansible
+1. pastikan python telah terinstall di host machine
+$ python --version
+Python 3.9.18
+
+2. pastikan python pip telah terinstall di host machine
+$ pip --version
+pip 21.2.3 from /usr/lib/python3.9/site-packages/pip (python 3.9)
+
+3. install ansible
+$ pip install ansible
+$ ansible --version
+
+# TODO Buat repository Git
+1. Install Git
+$ dnf install git
+$ apt install git
+
+2. Buat repository Github dan connect ke repo local
+
+# TODO Jalankan Ansible

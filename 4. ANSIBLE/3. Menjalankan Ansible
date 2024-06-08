@@ -1,0 +1,22 @@
+# TODO create inventory file
+-inventory.ini
+[serverprod]
+10.0.201.1
+10.0.201.2
+10.0.205.2
+
+-inventory.yml
+serverprod:
+  hosts:
+    srv_prod_1:
+      ansible_host: 10.0.201.1
+    srv_prod_2:
+      ansible_host: 10.0.201.2
+    srv_prod_3:
+      ansible_host: 10.0.205.2
+
+# TODO create ansible.cfg file
+-ansible.cfg
+[defaults]
+inventory = inventory.ini
+private_key_file = ~/.ssh/ansible
