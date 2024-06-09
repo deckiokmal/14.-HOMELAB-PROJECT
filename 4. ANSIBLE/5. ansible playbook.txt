@@ -1,0 +1,12 @@
+webserver_stack.yml
+
+---
+
+- hosts: serverprod
+  become: true
+  tasks:
+
+  - name: install apache2 package
+    apt:
+      name: apache2
+      state: latest

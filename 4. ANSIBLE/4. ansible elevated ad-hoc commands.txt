@@ -1,0 +1,26 @@
+# TODO testing update apt repository
+# False way
+$ ansible serverprod -m apt -a update_cache=true
+10.0.201.2 | FAILED! => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "msg": "Failed to lock apt for exclusive operation: Failed to lock directory /var/lib/apt/lists/: E:Could not open lock file /var/lib/apt/lists/lock - open (13: Permission denied)"
+}
+
+# True Way
+- elevated commands for sudo user
+$ ansible serverprod -m apt -a update_cache=true --become --ask-become-pass
+BECOME password: ## sudo passwd of the remote server
+10.0.201.2 | CHANGED => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "cache_update_time": 1717868802,
+    "cache_updated": true,
+    "changed": true
+}
+
+
+source: https://www.learnlinux.tv/getting-started-with-ansible-05-running-elevated-commands/
