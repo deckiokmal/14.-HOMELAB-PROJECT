@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2024-06-15T04:31:12.494Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="i5wKyZC7qKxdqk1InpR4" version="24.4.0" type="device" pages="3">
+<mxfile host="Electron" modified="2024-05-13T19:38:51.517Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="pNUDpY6LxQ10YJzgun3v" version="24.2.5" type="device" pages="3">
   <diagram name="HLD" id="Obm_fgFgjMz_bwcF1UcM">
-    <mxGraphModel dx="794" dy="557" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1723" dy="928" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -41,7 +41,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Bw6bc24Q86KJhFu49jmH" name="Networking Diagram">
-    <mxGraphModel dx="794" dy="557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1034" dy="557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -388,14 +388,11 @@
             <mxPoint x="-1" y="9" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="HClhLbCt896nHXiVXYrm-1" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Docker.svg;" parent="1" vertex="1">
+        <mxCell id="HClhLbCt896nHXiVXYrm-1" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Docker.svg;" vertex="1" parent="1">
           <mxGeometry x="860" y="617.5" width="67.07" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="HClhLbCt896nHXiVXYrm-2" value="10.0.210.0/24&lt;div&gt;ipvlan docker network&lt;/div&gt;" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.application" parent="1" vertex="1">
+        <mxCell id="HClhLbCt896nHXiVXYrm-2" value="10.0.210.0/24&lt;div&gt;ipvlan docker network&lt;/div&gt;" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.application" vertex="1" parent="1">
           <mxGeometry x="950" y="620" width="50" height="34" as="geometry" />
-        </mxCell>
-        <mxCell id="LMmWHK_W0wJgLp3dijlM-1" value="Ansible-Semaphore&lt;div&gt;Ubuntu 22.04LTS&lt;/div&gt;&lt;div&gt;10.0.205.4&lt;/div&gt;" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.azure.virtual_machine_feature" vertex="1" parent="1">
-          <mxGeometry x="785.07" y="720" width="50" height="45" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
